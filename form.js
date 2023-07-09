@@ -1,7 +1,7 @@
-let username = document.getElementById("username").value;
-let password = document.getElementById("password").value;
 let flag = 1;
 function validateForm() {
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
   if (username == "") {
     document.getElementById("userError").innerHTML = "Username is Empty";
     flag = 0;
@@ -19,7 +19,6 @@ function validateForm() {
   } else {
     document.getElementById("passError").innerHTML = "";
     flag = 1;
-    
   }
   if (flag) {
     return true;
